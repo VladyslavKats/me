@@ -1,0 +1,336 @@
+* , *::after , *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+body, html{
+    height: 100%;
+}
+
+
+
+
+
+
+body{
+    background-color: rgb(163, 132, 216);
+    font-size: 18px;
+}
+
+.wrapper{
+    height: auto;
+}
+
+.container{
+    height: 100%;
+    max-width: 900px;
+    padding: 20px;
+    margin: 0px auto;
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+.about{
+    flex: 0 1 50%;
+    background-color:rgba(201, 201, 201, 0.3);
+    color:#FAFAFA;
+    
+}
+
+.skills{
+    flex: 0 1 50%; 
+    background-color: #FFFFFF;
+    padding-top: 20px;
+}
+
+
+.block{
+    border-radius:10px;
+    padding: 20px 36px 15px;
+}
+
+.about__header{
+    display: flex;
+    justify-content: space-around;
+    color:#CECACA;
+    max-width: 350px;
+    margin: 0px auto;
+    gap: 10px;
+}
+
+.about__name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+
+.about__photo{
+    width: 110px;
+    height: 116px;
+   
+}
+.about__photo img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+.about__name .name{
+    color: white;
+}
+
+
+.about__links{
+    margin-top: 20px;
+}
+
+
+svg{
+   
+   position: absolute;
+   left: 20px;
+}
+
+
+.about__links ul a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.about__links ul li{
+    margin:10px auto 0px ;
+    max-width: 350px;
+    height: 38px;
+}
+
+.about-background{
+    background-color: rgba(181, 181, 181, 0.35);
+    border-radius: 10px;
+}
+
+li.about-background:hover{
+    background-color: rgba(219, 219, 219, 0.35);
+}
+
+
+.about__knowledge{
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.about__knowledge h3{
+   margin-left: 20px;
+   margin-bottom: 10px;
+}
+
+.about__knowledge ul li{
+    list-style: inside;
+    margin-bottom: 7px;
+}
+
+.about__languages , .about__social , .about__hobbies{
+    margin-top: 15px;
+    padding: 10px 0px 20px 20px ;
+}
+
+.about__languages ul li{
+    margin-top: 6px;
+}
+
+.about__hobbies h3{
+    margin-bottom: 10px;
+}
+
+.hobby{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height:60px;
+    text-align: center;
+}
+
+.hobby p{
+    margin-top: 5px;
+}
+
+
+
+.hobby svg{
+    position: static;
+}
+
+
+.title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.title-name{
+    width: 50%;
+    background-color: rgb(48, 48, 48);
+    font-size: 16px;
+    color:white;
+    height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.title .line{
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    background-color: rgb(48, 48, 48);
+}
+
+
+.skills__education .specialization{
+    font-size: 24px;
+   font-weight: 600;
+}
+
+.skills__education .university{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.skills__education .date{
+    margin-top: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #aeaeae;
+}
+
+
+.skill{
+    margin-bottom: 20px;
+}
+
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+
+    border: 2px solid #000000;
+
+    border-radius: 20px;
+
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #000000;
+
+
+}
+
+
+.skill-image{
+    width: 24px;
+    height: 24px;
+}
+
+
+.other__skills{
+    margin-top: 40px;
+}
+
+
+#c-sharp-bar{
+    animation: c-sharp-fill 2s forwards;
+}
+@keyframes c-sharp-fill{
+    100%{
+        width: 80%;
+    }
+}
+
+
+#angular-bar{
+    animation: angular-fill 2s forwards;
+}
+@keyframes  angular-fill{
+    100%{
+        width: 65%;
+    }
+}
+
+
+#sql-bar{
+    animation: sql-fill 2s forwards;
+}
+@keyframes sql-fill{
+    100%{
+        width: 60%;
+    }
+}
+
+
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 80%;
+    }
+}
+
+
+
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+
+
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill{
+    100%{
+        width: 65%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 759px) {
+    .container {
+      flex-direction: column;
+      max-width: 450px;
+    }
+  }
