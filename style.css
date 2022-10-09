@@ -45,7 +45,6 @@ body{
     flex: 0 1 50%;
     background-color:rgba(201, 201, 201, 0.3);
     color:#FAFAFA;
-    
 }
 
 .skills{
@@ -76,16 +75,9 @@ body{
     
 }
 
-
-
-.about__photo{
-    width: 110px;
-    height: 116px;
-   
-}
 .about__photo img{
-    width: 100%;
-    height:100%;
+    width: 109px;
+    height: 123px;
     border-radius: 50%;
 }
 
